@@ -1,13 +1,15 @@
 :root {
     --background: #121214;
-    --card-background: #1a1d24;
-    --card-border: #2d3748;
-    --text: #f7fafc;
-    --subtext: #a0aec0;
-    --button-text: #1a202c;
+    --card-background: #1A1D24;
+    --card-background-red: #4A0404;
+    --card-border: #2D3748;
+    --text: #F7FAFC;
+    --subtext: #A0AEC0;
+    --button-text: #1A202C;
     --button-background: #FFDB6C;
-    --button-text: #1a202c;
-    --button-hover: #f0cc5b;
+    --button-text: #1A202C;
+    --button-hover: #F0CC5B;
+
 }
 
 /*
@@ -79,7 +81,6 @@ body {
 }
 
 .header-text p {
-    font-size: 0.95rem;
     color: var(--subtext);
 }
 
@@ -105,6 +106,11 @@ body {
     border-radius: 12px;
 }
 
+.element-card-red {
+    background-color: var(--card-background-red);
+    height: auto;
+}
+
 .btn {
     display: inline-block;
     background-color: var(--button-background);
@@ -127,9 +133,34 @@ body {
 }
 
 .element-desc {
-    font-size: 0.9rem;
     color: var(--subtext);
     margin: 0;
+}
+
+.element-desc-special {
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.external{
+    padding-bottom: 0.5rem;
+    color: var(--button-background);
+}
+
+.footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--subtext);
+}
+
+.footer a {
+    color: var(--button-background);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 480px) {
